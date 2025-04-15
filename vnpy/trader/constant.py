@@ -82,6 +82,9 @@ class Exchange(Enum):
     """
     Exchange.
     """
+    # Crypto
+    BINANCE = "BINANCE"     # Binance
+
     # Chinese
     CFFEX = "CFFEX"         # China Financial Futures Exchange
     SHFE = "SHFE"           # Shanghai Futures Exchange
@@ -151,8 +154,10 @@ class Interval(Enum):
     """
     Interval of bar data.
     """
+    SECOND = "1s"
     MINUTE = "1m"
     HOUR = "1h"
     DAILY = "d"
     WEEKLY = "w"
+    MONTHLY = "M"
     TICK = "tick"
